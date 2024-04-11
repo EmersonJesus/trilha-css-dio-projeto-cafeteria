@@ -6,6 +6,10 @@
     --bs-btn-active-bg: #0c5734;
 }
 
+main {
+    margin-top: 5rem;
+}
+
 /* Navbar */
 
 .navbar-brand img {
@@ -22,4 +26,12 @@
     height: 100%;
     object-fit: cover;
     position: center;
+}
+
+.carousel-item::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(31, 31, 31));
+    position: absolute;
 }
