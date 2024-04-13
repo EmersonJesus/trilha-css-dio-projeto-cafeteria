@@ -1,6 +1,6 @@
 :root {
-    --bs-link-color: #198754;
-    --bs-link-hover-color: #146c43;
+    --bs-link-color: #D72009;
+    --bs-link-hover-color: #BE2414;
 }
 
 section {
@@ -8,11 +8,11 @@ section {
 }
 
 .btn {
-    --bs-btn-bg: #198754;
-    --bs-btn-border-color: #146c43;
-    --bs-btn-hover-bg: #146c43;
-    --bs-btn-hover-border-color: #146c43;
-    --bs-btn-active-bg: #0c5734;
+    --bs-btn-bg: #D72009;
+    --bs-btn-border-color: #BE2414;
+    --bs-btn-hover-bg: #BE2414;
+    --bs-btn-hover-border-color: #BE2414;
+    --bs-btn-active-bg: #972615;
 }
 
 main {
