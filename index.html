@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pizza Delicious</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/assets/images/logo.png"
+            alt="Logotipo Pizzaria"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Cardápio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#local">Local</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Pesquisar"
+              aria-label="Search"
+            />
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Carousel -->
+      <header id="carousel-pizza" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel-pizza"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-pizza"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-pizza"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="Pizza"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Delicie-se com a Perfeição em Cada Mordida!</h5>
+              <p>Descubra as Melhores Pizzas na Cidade!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1564936281659-ba4f75a41956?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="Forno da pizzaria"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Seu Refúgio Familiar de Sabores</h5>
+              <p>
+                Nossa Pizzaria Oferece um Ambiente Feito Sob Medida para Você e Sua Família!
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1619853618139-fe43aff572fa?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="Pizza"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Desperte Seus Sentidos em um Ambiente Único</h5>
+              <p>
+                Venha Conhecer Nossa Pizzaria e Desfrutar de um Ambiente Único e Encantador!"
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel-pizza"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel-pizza"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </header>
+
+      <!-- Quote -->
+      <figure>
+        <blockquote class="blockquote">
+          <h3 class="fw-lighter text-center fst-italic mt-5">
+            "Pizza é um amor com queijo derretido"
+          </h3>
+        </blockquote>
+        <figcaption class="blockquote-footer text-center">
+          <cite title="Source Title">Pizza Delicious</cite>
+        </figcaption>
+      </figure>
+
+      <!-- About Cards -->
+      <section id="about" class="container">
+        <div class="row">
+          <div class="col-lg-6 col-mb-12 mb-5">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1565748966642-cbfd46f9ba3a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid rounded-start"
+                    alt="Pizza"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Somos apaixonados por pizza</h5>
+                    <h6 class="card-subtitle mb-3 text-muted">
+                      Acreditamos que uma boa pizza pode mudar o (seu) dia
+                    </h6>
+                    <p class="card-text">
+                      Desperte seu Paladar com Nossa Seleção Cuidadosa de Ingredientes e Métodos de Preparo. 
+                      Cada Fatia é uma Jornada Sensorial que Reflete Nossa Paixão pela Pizza. 
+                      Junte-se a Nós e Descubra o Verdadeiro Amor pela Pizza!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-mb-12 mb-5">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1638981367648-d4909c40ab16?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid rounded-start"
+                    alt="Card Pizza"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Equipe Premium de Pizzaiolos
+                    </h5>
+                    <h6 class="card-subtitle mb-3 text-muted">
+                      Profissionais Especializados para Levar o Melhor da Pizza até a sua Mesa
+                    </h6>
+                    <p class="card-text">
+                      Nossa equipe de pizzaiolos é formada por verdadeiros apaixonados pela arte da pizza, 
+                      dedicados a elevar sua experiência gastronômica a novos patamares. 
+                      Com conhecimento especializado e habilidades refinadas, 
+                      cada pizza é cuidadosamente preparada para proporcionar uma experiência excepcional. 
+                      Descubra o que é possível com a pizza quando está nas mãos dos melhores profissionais.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section id="menu" class="container mt-5 mb-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="espresso-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#espresso-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="espresso-tab-pane"
+              aria-selected="true"
+            >
+              Salgadas
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="cappuccino-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#cappuccino-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="cappuccino-tab-pane"
+              aria-selected="false"
+            >
+              Doces
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="iced-coffee-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#iced-coffee-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="iced-coffee-tab-pane"
+              aria-selected="false"
+            >
+              Especiais
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="coffeesTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="espresso-tab-pane"
+            role="tabpanel"
+            aria-labelledby="espresso-tab"
+            tabindex="0"
+          >
+            <!-- Coffee Cards -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://painacozinha.com/wp-content/uploads/85.Pizza-de-Calabresa-com-Catupiry.webp"
+                    class="card-img-top"
+                    alt="Pizza de Calabresa"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza de Calabresa</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://www.sabornamesa.com.br/media/k2/items/cache/ada34cd2101afafaba465aad112ee3c1_XL.jpg"
+                    class="card-img-top"
+                    alt="Pizza de Frango com catupiry"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza de Frango com Catupiry</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://minervafoods.com/wp-content/uploads/2022/12/pizza_with_bacon_pepperoni_melted_cheese_olives_mushrooms_and_cherry_tomatoes_-_blog-1.jpg"
+                    class="card-img-top"
+                    alt="Pizza de Bacon"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza de Bacon</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d036cd01122da62bf581784f52d99b3a.jpg"
+                    class="card-img-top"
+                    alt="Pizza de 4 Queijos"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza de 4 Queijos</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://s2-receitas.glbimg.com/wb7DIMyCpEyV07sTAtcDWD8HQjw=/0x0:1200x675/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/h/r/EfCbvqTbeDRAD3Lzc5xA/pizza-margherita.jpg"
+                    class="card-img-top"
+                    alt="Pizza Margherita"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza Margherita</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://img.cybercook.com.br/receitas/819/pizza-a-portuguesa-1.jpeg"
+                    class="card-img-top"
+                    alt="Pizza Portuguesa"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza Portuguesa</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="cappuccino-tab-pane"
+            role="tabpanel"
+            aria-labelledby="cappuccino-tab"
+            tabindex="0"
+          >
+            <!-- Coffee Cards -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://www.sabornamesa.com.br/media/k2/items/cache/14985840dca330e3b808aa792fa422f9_XL.jpg"
+                    class="card-img-top"
+                    alt="Pizza de Chocolate com Morango"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza de Chocolate com Morango</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://static.itdg.com.br/images/1200-675/ab93c09d82d7004b7c440fe5d3d734ad/131483-original.jpg"
+                    class="card-img-top"
+                    alt="Pizza de Chocolate com Confete"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza de Chocolate com Confete</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://blog.novasafra.com.br/wp-content/uploads/2018/04/pp-780x450.jpg"
+                    class="card-img-top"
+                    alt="Pizza de Prestígio"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza de Prestígio</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://img77.uenicdn.com/image/upload/v1587225089/business/ab06f5a6-2f67-4289-96bb-d61114c78073.jpg"
+                    class="card-img-top"
+                    alt="Pizza Romeu e Julieta"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza Romeu e Julieta</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://harald.com.br/wp-content/uploads/2022/11/pizza-de-banana-e-chocolate-branco-imagem-a-esquerda-receitas-960x440-1.jpg"
+                    class="card-img-top"
+                    alt="Pizza de Banana Nevada"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza de Banana Nevada</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://blog.novasafra.com.br/wp-content/uploads/2016/01/pizza-de-brigadeiro-780x360.jpg"
+                    class="card-img-top"
+                    alt="Pizza de Brigadeiro"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza de Brigadeiro</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="iced-coffee-tab-pane"
+            role="tabpanel"
+            aria-labelledby="iced-coffee-tab"
+            tabindex="0"
+          >
+            <!-- Coffee Cards -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://pizzafacil.ind.br/website2018/wp-content/uploads/2018/04/pizza-lombo.jpg"
+                    class="card-img-top"
+                    alt="Pizza de Lombo com Abacaxi"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza de Lombo com Abacaxi</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://receitadeviagem.com.br/wp-content/uploads/2016/03/Pizza-de-cora%C3%A7%C3%A3o-de-galinha-Receita-de-Viagem.jpg"
+                    class="card-img-top"
+                    alt="Pizza de Coração"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza de Coração</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-menu">
+                  <img
+                    src="https://www.paollarestaurante.com.br/uploads/images/2019/08/pizza-strogonoff-de-carne-1565146013.jpg"
+                    class="card-img-top"
+                    alt="Pizza de Strogonoff"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza de Strogonoff</h5>
+                    <p class="card-text">R$ 60,00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Local-->
+      <section id="local" class="container text-center mb-5">
+        <!-- Button modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#localModal"
+        >
+          Quero conhecer a Pizza Delicious
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="localModal"
+          tabindex="-1"
+          aria-labelledby="localModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="localModalLabel">
+                  Estamos te esperando!
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Te esperamos na Rua Col. Lucidoro, n. 213 - Centro <br />
+                  Campos Novos/SC
+                </p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.3088110146355!2d-51.22375492376475!3d-27.397293713626418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e164d579bf79b3%3A0x2b3d3c9710784de2!2sRedante%E2%80%99s%20Pizzeria!5e0!3m2!1spt-BR!2sbr!4v1712914240891!5m2!1spt-BR!2sbr"
+                  style="width: 100%;"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer  class="text-center bg-dark p-5 mt-5 text-light">
+        <img width="80" src="/assets/images/logo.png" alt="Logotipo">
+        <p class="mt-2 mb-0 fw-bold">
+          Pizza Delicious | Deliciando Paladares, Uma Fatia de Satisfação!
+        </p>
+        <p>(49) 99534-8745</p>
+      </footer>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
