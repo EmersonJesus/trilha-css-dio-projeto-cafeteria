@@ -3,6 +3,18 @@
     --bs-link-hover-color: #BE2414;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;            
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #fff;        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #D72009;         
+    border: 3px solid #BE2414;  
+  }
 section {
     scroll-margin-top: 6rem;
 }
